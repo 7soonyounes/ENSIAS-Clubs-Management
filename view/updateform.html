@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier La Demande</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <center>Modifer La Demande
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+
+    <form action="../controller/controluser.inc.php?action=update" method="post">
+        Salle:
+        <select name="salle" id="">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="A4">A4</option>
+            <option value="A5">A5</option>
+            <option value="A6">A6</option>
+            <option value="A7">A7</option>
+            <option value="A8">A8</option>
+        </select><br><br><br><br>
+        Date de besoin:
+        <input type="date" name="dateBesoin"><br><br><br><br>
+        Duree de besoin (Nombre de jours):
+        <input type="number" name="duree"><br><br><br><br>
+        Demande:<br>
+        <textarea name="demande" rows="25" cols="50"></textarea><br><br><br><br>
+        <button type="submit" name="submit">Valider</button>
+    </form>
+
+</center>
+</body>
+</html>

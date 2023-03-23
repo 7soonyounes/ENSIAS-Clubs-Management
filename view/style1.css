@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    font-size: 62,5%;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 4.8rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+li{
+    font-size: 1.2rem;
+}
+a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/*header*/
+.main-head{
+    font-family: 'Anek Odia', sans-serif;
+    background: #24262b;
+
+}
+nav{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+nav ul{
+    min-height: 10vh;
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#logo{
+    flex: 1 1 40rem;
+}
+
+/*section*/
+.hero{
+    font-family: 'Anek Odia', sans-serif;
+    min-height: 90vh;
+    background: url("images/redback.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    color: rgb(253, 136, 136);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+button{
+    padding: 1.2rem 2rem;
+    background: black;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin: 2rem;
+}
+.hero h2{
+    padding: 4rem;
+}
+
+.hero p{
+    font-size: 1.5rem;
+}
+
+.hero div{
+    padding: 4rem;
+}
+
+@media screen and (max-width:885px){
+    html{
+        font-size: 80%;
+    }
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 2rem;
+    }
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure{
+    display: inline-flex;
+    position: relative;
+    width: 200%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img{
+    float: left;
+    width: 17%;
+    
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    30%{
+        left: -50%;
+    }
+    60%{
+        left: -100%;
+    }
+    80%{
+        left: -50%;
+    }
+    100%{
+        left: 0;
+    }
+
+}
+/*form*/
+.table td{
+    padding: 2rem;
+	margin: right;
+    font-size:1.4rem;
+    
+}
+
+/*footer*/
+
+
+.container{
+    font-family: 'Anek Odia', sans-serif;
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+    font-family: 'Anek Odia', sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: rgba(255,255,255,0.2);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-family: 'Anek Odia', sans-serif;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    height: 70px;
+}

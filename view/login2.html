@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="stylelogin.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Odia&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <header class="main-head">
+        <nav>
+            <h1>ENSIAS.Clubs</h1>
+            <ul>
+                <li></li>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form action="../controller/login.php" method="post">
+        <div class="container">
+            <div class="screen">
+                <div class="screen__content">
+                    <form class="login" >
+                        <div class="login__field">
+                            <i class="login__icon fas fa-user"></i>
+                            <input type="text" name="login" class="login__input" placeholder="Club / Admin">
+                        </div>
+                        <div class="login__field">
+                            <i class="login__icon fas fa-lock"></i>
+                            <input type="password" name="pass" class="login__input" placeholder="Mot de passe">
+                            <p style="color:red">Utilisateur ou mot de passe incorret</p>
+                        </div>
+                        <button type="submit" class="button login__submit">
+                            <span class="button__text">Se connecter</span>
+                            <i class="button__icon fas fa-chevron-right"></i>
+                        </button>				
+                </div>
+                <div class="screen__background">
+                    <span class="screen__background__shape screen__background__shape4"></span>
+                    <span class="screen__background__shape screen__background__shape3"></span>		
+                    <span class="screen__background__shape screen__background__shape2"></span>
+                    <span class="screen__background__shape screen__background__shape1"></span>
+                </div>		
+            </div>
+        </div>
+    </form>
+        </section>
+     <footer class="footer">
+        <div class="contrainer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>LIENS UTILES</h4>
+                    <ul>
+                        <li><a href="http://ensias.um5.ac.ma/">ENSIAS</a></li>
+                        <li><a href="http://www.um5.ac.ma/um5/">UM5</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACTEZ-NOUS</h4>
+                    <ul><li><a href="">Laissez nous vos remarques</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LOCALISATION</h4>
+                    <ul>
+                        <li><a href="">Avenue Mohammed Ben Abdallah Regragui, Madinat Al Irfane, BP 713, Agdal Rabat, Maroc</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

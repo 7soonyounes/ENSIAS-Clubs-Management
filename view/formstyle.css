@@ -1,0 +1,104 @@
+body {
+    background: linear-gradient(90deg, #641414, #c31010);	
+    margin: auto;
+    padding: auto;
+    
+}
+
+  
+  /* form animation starts */
+  .form {
+    background: #fff;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 5px solid #000000;
+  
+  /*   z-index: 1; */
+    animation: bounce 1.5s infinite;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 1.3em;
+  }
+  
+  
+  .name {
+    background-color: #ebebeb;
+    color: white;
+  }
+  .name:hover {
+    border-bottom: 5px solid #000000;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+  }
+  
+  .salle {
+    background-color: #ebebeb;
+    height: 3em;
+    width: 325px;
+  }
+  .date {
+    background-color: #ebebeb;
+    height: 2em;
+  }
+  .date:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+  }
+  
+  
+  .demande {
+    background-color: #ebebeb;
+    overflow: hidden;
+    height: 10rem;
+  }
+  
+  .demande:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 12em;
+    width: 380px;
+    transition: ease 0.5s;
+  }
+  
+  .formEntry {
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .submit {
+    width: 200px;
+    color: white;
+    background-color: #3e413f;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    box-shadow: 15px 15px 15px 5px #1d1d1d38;
+    transform: translateY(-3px);
+    width: 300px;
+    border-top: 5px solid #171717;
+    border-radius: 0%;
+  }
+  
+  @keyframes bounce {
+    0% {
+      tranform: translate(0, 4px);
+    }
+    50% {
+      transform: translate(0, 8px);
+    }
+  } 
+  
